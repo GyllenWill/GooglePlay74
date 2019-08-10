@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <!--titlebar-->
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grid_item_bg_normal"
+            android:drawableLeft="@drawable/ic_launcher"
+            android:drawablePadding="40dp"
+            android:textSize="25dp"
+            android:text="谷歌电子市场74" />
+    </RelativeLayout>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/pager_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/bg_tab"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tab_text_color_selected"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/tab_text_color_selected"
+        app:tabTextColor="#000"
+
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="viewpage" />
+
+</LinearLayout>
